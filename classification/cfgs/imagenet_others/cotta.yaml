@@ -1,0 +1,20 @@
+CORRUPTION:
+  DATASET: imagenet_r
+  SEVERITY:
+    - ""
+  TYPE:
+    - ""
+MODEL:
+  ADAPTATION: cotta
+  ARCH: resnet50
+OPTIM:
+  METHOD: Adam # SGD
+  STEPS: 1
+  BETA: 0.9
+  LR: 1e-3 # 0.00003125  # 框架里使用的是SGD，lr=0.01，论文中We use the same Adam optimizer with a learning rate of 1e-3 as the official implementation.
+  WD: 0.0
+COTTA:
+  RST: 0.01 # 框架中使用0.001，论文中restoration probability of p = 0.01 for all our experiments.
+  AP: 0.1
+TEST:
+  BATCH_SIZE: 64

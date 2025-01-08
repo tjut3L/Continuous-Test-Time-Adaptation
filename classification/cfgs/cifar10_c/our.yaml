@@ -1,0 +1,33 @@
+MODEL:
+  ADAPTATION: our
+  ARCH: Standard # Standard # resnet26_gn # Hendrycks2020AugMix_ResNeXt  #
+TEST:
+  BATCH_SIZE: 32
+#  BATCH_SIZE: 10
+CORRUPTION:
+  DATASET: cifar10_c
+  SEVERITY:
+    - 5
+  TYPE:
+    - gaussian_noise
+    - shot_noise
+    - impulse_noise
+    - defocus_blur
+    - glass_blur
+    - motion_blur
+    - zoom_blur
+    - snow
+    - frost
+    - fog
+    - brightness
+    - contrast
+    - elastic_transform
+    - pixelate
+    - jpeg_compression
+OPTIM:
+  METHOD: Adam
+  STEPS: 1
+  BETA: 0.9
+  LR: 0.003 # error：1e-3 18.01%; 0.0008:18.00%
+#  LR: 0.0015  # error：1e-3 18.01%; 0.0008:18.00%
+  WD: 0. # 5e-4

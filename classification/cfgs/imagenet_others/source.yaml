@@ -1,0 +1,11 @@
+CORRUPTION:
+  DATASET: imagenet_r
+  SEVERITY:
+    - ""
+  TYPE:
+    - ""
+MODEL:
+  ADAPTATION: source
+  ARCH: resnet50 # Hendrycks2020AugMix
+TEST:
+  BATCH_SIZE: 64
