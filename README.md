@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-# Continuous-Test-Time-Adaptation
-=======
-<<<<<<< HEAD
-# Continuous-Test-Time-Adaptation
-=======
 # Continuous test-time adaptation based on mean teacher networks
 
 ## Prerequisites
@@ -90,6 +84,3 @@ python test_time.py --cfg cfgs/imagenet_c/tent.yaml MODEL.ARCH resnet50 MODEL.WE
 + EATA [official](https://github.com/mr-eggplant/EATA)
 + AR-TTA [official](https://github.com/dmn-sjk/ar-tta)
 + SAR [official](https://github.com/mr-eggplant/SAR)
-
->>>>>>> e97e5ba (first commit)
->>>>>>> fda5cb7 (first commit)
